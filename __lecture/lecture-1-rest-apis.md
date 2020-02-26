@@ -129,5 +129,5 @@ If a resources can only exist _within_ a resource, it should be part of the endp
 - `404` NOT FOUND — When looking for certain resource and it is not available in the system.
 - `500` INTERNAL SERVER ERROR — Should never be thrown explicitly but might occur if the system fails.
 - `502` BAD GATEWAY — When the server received an invalid response from the upstream server.
-
+- `300s` are related to redirects
 ---
