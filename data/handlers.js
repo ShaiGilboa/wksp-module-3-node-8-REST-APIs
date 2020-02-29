@@ -30,4 +30,14 @@ const guessHandler = (req, res) => {
     res.status(200).send({status: 200, data: checked})
 }
 
-module.exports = {homeHandler,wordsHandler,guessHandler}
+const hintHandler = (req, res) => {
+    const {wordId} = req.params
+    const theWord = words.filter(word => word.id === wordId)
+    if (theWord) {
+        res.status(200).send({status: 200, data: theWord[0].hint})
+    } else {
+        res.status(406).send({status: 406, data: 'Wrong id'})
+    }
+}
+
+module.exports = {homeHandler,wordsHandler,guessHandler, hintHandler}

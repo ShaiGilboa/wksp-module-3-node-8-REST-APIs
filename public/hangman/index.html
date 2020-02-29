@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
     <style>
     </style>
 </head>
 <body>
-    <div class="content">
-        time to get to hanging.... I mean guessing...
+    <start class="start">
+        <h1>The hangman game!</h1>
+        <!-- <img src="../assets/X.png" alt=""> -->
+        <div class="buttons">
+            <button  id="start">start</button>
+            <button id="instructions">instructions</button>
+        </div>
+    </start>
+    <instructions class="instructions none" id="instructions-box">
+        <h2>How to play?</h2>
+        <p>Once you click on the 'start' button you will see the lines that represent the amount of letters you will need to find.</p>
+        <p>On the right corner you will see the amount of guesses you have left, and on the left you will see the letters that you have guessed</p>
+        <p>In order to make your guess, just press the letter key on your keyboard</p>
+        <p>If you choose the have a hint, it will cost you 1 attempt</p>
+        <p>press 'space' key to continue</p>
+    </instructions>
+    <div class="game-info none" id="game info">
+        <div id="guessing" class=""></div>
+        <div class="guessed">
+            <h2 id="guessed" >You have guessed: <p id="guessed string" class=""></p> </h2>
+        </div>
+        <h2 id="the hint" class="the-hint none"></h2>
+        <div class="attempts">
+            <h2 id="attempts">attempts left: <p id="guess amount" class="attempts-amount"></p></h2>
+        </div>
+        <button id="hint button" class="hint-button">Hint?</button>
     </div>
-    <form onsubmit="getWord(event)" id="new word">
-        <label>
-            Gimme a word
-        </label>
-        <button type="submit">NOW!!</button>
-    </form>
-    <h2 id="guessing"></h2>
-    <h2 id="guessed">You have guessed: <p id="guessed string"></p> </h2>
-    <h2>you have <p id="guess amount"></p> more attempts</h2>
+    <div id="end block" class="end-block none">
+        <h2 class="end-message" id="end message"></h2>
+        <button class="another" id="another">would you like to try again?</button>
+    </div>
+    <script src="alphabet.js"></script>
     <script src="scripts.js"></script>
 </body>
 

@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
-const {homeHandler,wordsHandler,guessHandler} = require('./data/handlers')
+const {homeHandler,wordsHandler,guessHandler, hintHandler} = require('./data/handlers')
 
 
 const PORT = process.env.PORT || 8000;
@@ -24,5 +24,6 @@ express()
     .get('/', homeHandler)
     .get('/hangman/words', wordsHandler)
     .get('/hangman/:wordId/:letter', guessHandler)
+    .get('/hint/:wordId', hintHandler)
 
     .listen(PORT, () => console.log(`Listening on port ${PORT}`));
