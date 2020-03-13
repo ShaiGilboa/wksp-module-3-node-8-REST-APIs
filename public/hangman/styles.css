@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+  h2, p, button, h1 {
+    text-transform: uppercase;
+    font-family: 'Oxanium', sans-serif;;  
+    color: #8F3985;
+  }
+
+  h1{
+    background-color: #B5E2FA;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top: 10px solid #229ACA;
+    border-left: 10px solid #229ACA;
+    border-right: 10px solid #229ACA;
+    width:200px;
+  }
+
+  #instructions, #start {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 0;
+  }
+
+  .start {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 100px)
+  }
+
+  #start {
+    position: absolute;
+  }
+
+  button {
+    background-color: #424874;
+    border-radius: 5px;
+    background-image: radial-gradient(rgba(255, 215, 0, 0.7) ,rgba(255, 215, 0,0.3),rgba(255, 215, 0,0));
+    border: none;
+    width:200px;
+    height: 70px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif");
+  object-fit: fill;
+  }
+
+  .game-info {
+    margin: 100px auto 0;
+  }
+
+.guessed {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #B5E2FA;
+  width: 300px;
+  height: 100px;
+  border-radius: 30px;
+  border: 10px solid #229ACA;
+  text-align: center;
+  padding: auto;
+}  
+
+#guessed {
+  margin-top: 20px;
+}
+
+.attempts {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: #B5E2FA;
+  border-radius: 30px;
+  width: 300px;
+  height: 100px;
+  border: 10px solid #229ACA;
+  text-align: center;
+}
+
+#attempts {
+  margin-top: 20px;
+}
+
+.x {
+  width:70px;
+  height: 70px;
+  border-radius: 80px;
+  margin: 0 5px;
+}
+
+.start{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.the-hint {
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  left: calc(50vw - 150px);
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  background-color: #B5E2FA;
+  border-radius: 30px;
+  border: 10px solid #229ACA;
+  padding-top: 20px
+}
+
+.hint-button {
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% - 100px)
+}
+
+.instructions {
+  position: absolute;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: #B5E2FA;
+  border-radius: 30px;
+  border: 10px solid #229ACA;
+  margin: 0, 20px;
+}
+
+.end-block {
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+  left: calc(50% - 100px)
+}
+
+.none {
+  display: none;
+}
