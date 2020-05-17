@@ -15,7 +15,7 @@ const words = [
     {word: 'australia', id: '14', count: '9', hint: 'Vegemite sandwich'},
     {word: 'refrigerator', id: '15', count: '12', hint: 'Boy, boy. crazy boy. _____ _____ boy!'},
     {word: 'piano', id: '16', count: '5', hint: 'a different keyboard'},
-    // {word: 'ethics', id: '17', count: '6', hint: ''}
+    {word: 'ethics', id: '17', count: '6', hint: 'the study of whats good and bad'},
 ]
 
 module.exports = {words}
